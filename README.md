@@ -66,15 +66,23 @@ So in the above diagram we are looking at a single namespace that will be PCI co
 
 Looking at the PCI compliance checklist it seems at a High level you need to adhere to the following requirements:
 
-- Install and maintain a firewall configuration to protect cardholder data.
-- Do not use vendor-supplied defaults for system passwords and other security parameters.
-- Protect stored cardholder data.
-- Encrypt transmission of cardholder data across open, public networks.
-- Use and regularly update anti-virus software.
-- Develop and maintain secure systems and applications.
-- Restrict access to cardholder data by business need-to-know. Assign a unique ID to each person with computer access. Restrict physical access to cardholder data.
-- Track and monitor all access to network resources and cardholder data.
-- Regularly test security systems and processes.
-- Maintain a policy that addresses information security.
+1. Install and maintain a firewall configuration to protect cardholder data.
+2. Do not use vendor-supplied defaults for system passwords and other security parameters.
+3. Protect stored cardholder data.
+4. Encrypt transmission of cardholder data across open, public networks.
+5. Use and regularly update anti-virus software.
+6. Develop and maintain secure systems and applications.
+7. Restrict access to cardholder data by business need-to-know. Assign a unique ID to each person with computer access. Restrict physical access to cardholder data.
+8. Track and monitor all access to network resources and cardholder data.
+9. Regularly test security systems and processes.
+10. Maintain a policy that addresses information security.
 
 This list is a summation of the actual checklist that has 200 requirements (We will mark this appraoch against all 200) but we will attempt to first see if this approach can acheive the above list.
+
+### Lets Look at this in a bit more details
+
+|                     Area                     |                            Description                            | Covered Levels |
+| :------------------------------------------: | :---------------------------------------------------------------: | :------------: |
+|        [Auditing](./docs/AUDITING.md)        | This is the ability to track who has accessed and/or made changes |    3,6,8,10    |
+|      [Networking](./docs/NETWORKING.md)      |        This is the ability to secure the transfer of data         |     1,4,7      |
+| [Vulnerabilities](./docs/VULNERABILITIES.md) |     The ability to track potential security flaws in a system     |  2,5,6,7,9,10  |
