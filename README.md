@@ -4,6 +4,20 @@ A theoretical example of a multi tenant (or app) cluster with PCI Compliant name
 
 **NOTE: This is currently a theoretical example and will need to be verified**
 
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
+
+**Table of Contents**
+
+- [Cloud Native PCI Compliance](#cloud-native-pci-compliance)
+  - [The Problem](#the-problem)
+    - [First lets start with what is PCI Compliance and why is it important?](#first-lets-start-with-what-is-pci-compliance-and-why-is-it-important)
+    - [The Normal Way](#the-normal-way)
+    - [Proposed Way](#proposed-way)
+  - [The PCI Compliant Namespace](#the-pci-compliant-namespace)
+  - [How Do We acheive this?](#how-do-we-acheive-this)
+
+<!-- markdown-toc end -->
+
 ## The Problem
 
 When Approaching PCI Compliance a general pattern that is seen is that a company will create a fully seperate system that handles the PCI compliance. This is seen as the "safe method" as if nothing else is in the same place, there is generally less cause for concern. If we take into account Kubernetes this would generally be an entire Kubernetes cluster dedicated to a PCI compliant application. For any person or team that runs Kubernetes clusters at scale, the overhead of running a dedicated cluster might not be optimal, and comes with its own challenges, but what are the other choices?
