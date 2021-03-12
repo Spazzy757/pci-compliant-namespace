@@ -83,6 +83,7 @@ This list is a summation of the actual checklist that has 200 requirements (We w
 
 |                     Area                     |                            Description                            | Covered Levels |
 | :------------------------------------------: | :---------------------------------------------------------------: | :------------: |
-|        [Auditing](./docs/AUDITING.md)        | This is the ability to track who has accessed and/or made changes |    3,6,8,10    |
-|      [Networking](./docs/NETWORKING.md)      |        This is the ability to secure the transfer of data         |     1,4,7      |
-| [Vulnerabilities](./docs/VULNERABILITIES.md) |     The ability to track potential security flaws in a system     |  2,5,6,7,9,10  |
+|        [Auditing](./docs/AUDITING.md)        | This is the ability to track who has accessed and/or made changes |                |
+|      [Networking](./docs/NETWORKING.md)      |        This is the ability to secure the transfer of data         |                |
+| [Vulnerabilities](./docs/VULNERABILITIES.md) |     The ability to track potential security flaws in a system     |                |
+|          [Access](./docs/ACCESS.md)          |          The ability to give users access to the system           |                |
