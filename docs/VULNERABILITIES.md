@@ -22,4 +22,6 @@ Kubernetes has a concept know as [Admission Controllers](https://kubernetes.io/d
 
 ### Runtime Scanning
 
-// TODO
+One extra layer of security that can be added to make sure software is only doing what it is supposed to do is runtime scanning. This is where you have a component monitoring all the system calls that each application is making and using policies to allow/deny these calls. This is good for alerting on non-normal behaviour of running applications (for instance if a container starts installing packages like [wget](https://www.gnu.org/software/wget/) or [curl](https://curl.se/) there might be a bad actor).
+
+![Runtime Security](../images/RuntimeSecurity.png)
