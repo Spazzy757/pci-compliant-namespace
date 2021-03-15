@@ -14,6 +14,12 @@ The workflow would look similar to:
 
 ![Sign Scanned Images](../images/SignScannedImages.png)
 
+### Admission Webhhok Controller
+
+Kubernetes has a concept know as [Admission Controllers](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/). The essential understanding of a Admission Controller is the idea that you have a component in your cluster that runs and verifies the applications that get created in your cluster. This is an ideal situation as it will block any applications that for instance might use images from unverified sources or alternatively scan images before they are deployed to the system. Sysdig seems to have a good implementation of this in their [Anchore Admission Controller](https://github.com/anchore/kubernetes-admission-controller)
+
+![Admission Controller](../images/AdmissionController.png)
+
 ### Runtime Scanning
 
 // TODO
