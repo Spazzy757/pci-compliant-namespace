@@ -4,7 +4,7 @@ Scanning software for vulnerabilities shouild always be integrated in your secur
 
 ## What does this look like in Kubernetes?
 
-For our use case of making a namepsace PCI compliant this has two implications
+For our use case of making a namepsace PCI compliant this has a couple of implications
 
 ### CVE scanning
 
